@@ -1,10 +1,10 @@
 /*============================================
-; Title: Assignment 1.3
+; Title: Assignment 1.4
 ; Author: Richard Krasso
 ; Date: 27 April 2020
 ; Modified By: Rhonda Rivas
 ; Description: This program demonstrates the
-; function class and object literal
+; duck typing - interfaces
 ===========================================
 */
 var header = require('../Rivas-header.js');
