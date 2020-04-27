@@ -58,3 +58,5 @@ console.log(cellPhone.getDetails());
     }
 
 // end program
+//****Note - the debugger kept telling me it was waiting for it to end, 
+//so i couldn't see the output but i didn't get errors on my script. 
