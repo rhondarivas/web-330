@@ -10,10 +10,6 @@
 var header = require('../header.js');
 
 /*
- Expected output:
- FirstName LastName
- <AssignmentName>
- <Today's Date>
  Oracle {
     username: '<username>',
     password: '<password>',
