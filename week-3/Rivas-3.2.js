@@ -1,4 +1,3 @@
-
 /*============================================
 ; Title: Assignment 3.2
 ; Author: Richard Krasso
@@ -8,7 +7,7 @@
 ; Factory Pattern
 ===========================================
 */
-
+var header = require('../header.js');
 
 /*
  Expected output:
