@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 5.2 - The Proxy Pattern</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!--jquery Reference Library-->
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<!--note to professor - the starter code from the 5.2 class work differed from the repo/330 from git hub so i combined them-->
+</head>
+<body>
+<nav class="navbar navbar-dark bg-danger">
+  <a href="#" class="navbar-brand">Home</a>
+</nav>
+<br /> <br />
+<div class="container">
+  <div class="col-md-12">
+    <h2>Rivas 5.2 The Proxy Pattern</h2>
+
+    <button class="btn btn-danger" id="btnPreviewProxy">Preview the Proxy</button>
+    <br />
+    <span id="spanProxyResults"></span>
+    </div>
+  </div>
+</div>
+<script>
+    $(function() {
+
+var rollercoasters = {
+  name: "Magnum XL 200",
+  year: "1989",
+  display: function() {
+    //clears the span tag before adding the new content
+    $("#spanProxyResults").html("");
+
+    $("#spanProxyResults").append("<br />Name: " + this.name + "<br />" + "Year: " + this.year);
+  }
+};
+$("#btnPreviewProxy").click($.proxy(rollercoasters, "display"));
+    });
+</script>
+
+
+</body>
+</html>
